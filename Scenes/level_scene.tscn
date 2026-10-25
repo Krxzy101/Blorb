@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bik2i06hm3ucp"]
 
-[ext_resource type="Texture2D" uid="uid://b6fwrleikd0vx" path="res://WarioBG.jpeg" id="1_cn3xy"]
-[ext_resource type="Texture2D" uid="uid://2jfuokb1iusg" path="res://Garlic Colored.svg" id="2_c7xwe"]
+[ext_resource type="Texture2D" uid="uid://b6fwrleikd0vx" path="res://Assets/WarioBG.jpeg" id="1_cn3xy"]
+[ext_resource type="Texture2D" uid="uid://2jfuokb1iusg" path="res://Assets/Garlic Colored.svg" id="2_c7xwe"]
 
 [node name="Level" type="Node2D"]
 

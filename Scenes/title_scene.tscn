@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://6n4to0qdmul1"]
 
-[ext_resource type="Texture2D" uid="uid://b6fwrleikd0vx" path="res://WarioBG.jpeg" id="1_68ljo"]
+[ext_resource type="Texture2D" uid="uid://b6fwrleikd0vx" path="res://Assets/WarioBG.jpeg" id="1_68ljo"]
 [ext_resource type="Script" uid="uid://bk3nahfrqr40x" path="res://Scenes/title_screen.gd" id="1_b6ftn"]
 
 [node name="TitleScreen" type="Node2D"]

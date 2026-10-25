@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6fwrleikd0vx"
-path="res://.godot/imported/WarioBG.jpeg-a4a937a031875220bd6037890c8b033c.ctex"
+uid="uid://cs0ideymx2tq5"
+path="res://.godot/imported/Blorb Player.svg-711835b62320a9329b5b49427cbbfdcf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://WarioBG.jpeg"
-dest_files=["res://.godot/imported/WarioBG.jpeg-a4a937a031875220bd6037890c8b033c.ctex"]
+source_file="res://addons/Blorb Player.svg"
+dest_files=["res://.godot/imported/Blorb Player.svg-711835b62320a9329b5b49427cbbfdcf.ctex"]
 
 [params]
 
@@ -32,3 +32,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

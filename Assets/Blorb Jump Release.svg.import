@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djbxlmo6vg1qu"
-path="res://.godot/imported/Garlic.svg-277534075b7dc07846f8aad4bbc6a2c7.ctex"
+uid="uid://yk366l5xtv1g"
+path="res://.godot/imported/Blorb Jump Release.svg-cbeb012022fee5e2351f7dca0e1fbd2d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Garlic.svg"
-dest_files=["res://.godot/imported/Garlic.svg-277534075b7dc07846f8aad4bbc6a2c7.ctex"]
+source_file="res://Assets/Blorb Jump Release.svg"
+dest_files=["res://.godot/imported/Blorb Jump Release.svg-cbeb012022fee5e2351f7dca0e1fbd2d.ctex"]
 
 [params]
 
