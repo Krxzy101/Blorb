@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=3 uid="uid://dxg55lmh2tgp6"]
+
+[ext_resource type="Texture2D" uid="uid://cgj72mj8qafm5" path="res://Assets/Bg for Blorb.jpg" id="1_2n61g"]
+[ext_resource type="PackedScene" uid="uid://c16hpkxpaexmg" path="res://player.tscn" id="2_gi7k6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tfs2c"]
+size = Vector2(1151.25, 189)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gi7k6"]
+size = Vector2(128.75, 36)
+
+[node name="minigame_1" type="Node2D"]
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
+repeat_size = Vector2(1000, 0)
+autoscroll = Vector2(-100, 0)
+repeat_times = 10000
+
+[node name="Background" type="TextureRect" parent="Parallax2D"]
+offset_left = 8.0
+offset_right = 1033.0
+offset_bottom = 641.0
+texture = ExtResource("1_2n61g")
+expand_mode = 1
+
+[node name="Platform1" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform1"]
+position = Vector2(576.375, 549.5)
+shape = SubResource("RectangleShape2D_tfs2c")
+
+[node name="Player" parent="." instance=ExtResource("2_gi7k6")]
+position = Vector2(42, 389)
+
+[node name="Platform2" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform2"]
+position = Vector2(311.625, 370)
+shape = SubResource("RectangleShape2D_gi7k6")
+
+[node name="ColorRect" type="ColorRect" parent="Platform2"]
+offset_left = 247.0
+offset_top = 349.0
+offset_right = 379.0
+offset_bottom = 389.0
+color = Color(0, 0, 0, 1)
