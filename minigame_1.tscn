@@ -1,8 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://dxg55lmh2tgp6"]
+[gd_scene load_steps=14 format=3 uid="uid://dxg55lmh2tgp6"]
 
 [ext_resource type="Texture2D" uid="uid://cgj72mj8qafm5" path="res://Assets/Bg for Blorb.jpg" id="1_2n61g"]
+[ext_resource type="Script" uid="uid://c8aq5fh5ibuhi" path="res://minigame_1.gd" id="1_wh6qq"]
 [ext_resource type="PackedScene" uid="uid://c16hpkxpaexmg" path="res://player.tscn" id="2_gi7k6"]
 [ext_resource type="Texture2D" uid="uid://bt5ankdw6hw5k" path="res://Assets/icon.svg" id="3_0hvi2"]
+[ext_resource type="Script" uid="uid://4idp0qeqe4hw" path="res://blorb_balls.gd" id="4_or1ld"]
+[ext_resource type="PackedScene" uid="uid://ic0plgd0sn1n" path="res://themedtimer.tscn" id="6_or1ld"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0hvi2"]
 size = Vector2(59, 651)
@@ -12,6 +15,21 @@ size = Vector2(1280, 183)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gi7k6"]
 size = Vector2(128.75, 36)
+
+[sub_resource type="Animation" id="Animation_r6gmb"]
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("..:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(400, 0)]
+}
 
 [sub_resource type="Animation" id="Animation_0hvi2"]
 resource_name = "floating"
@@ -29,21 +47,6 @@ tracks/0/keys = {
 "values": [Vector2(400, 5), Vector2(400, -7.5)]
 }
 
-[sub_resource type="Animation" id="Animation_r6gmb"]
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("..:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(400, 0)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_wh6qq"]
 _data = {
 &"RESET": SubResource("Animation_r6gmb"),
@@ -54,6 +57,7 @@ _data = {
 radius = 24.0208
 
 [node name="minigame_1" type="Node2D"]
+script = ExtResource("1_wh6qq")
 
 [node name="ScrollingBackground" type="Parallax2D" parent="."]
 repeat_size = Vector2(1000, 0)
@@ -130,10 +134,11 @@ color = Color(0, 0, 0, 1)
 [node name="Player" parent="." instance=ExtResource("2_gi7k6")]
 position = Vector2(42, 389)
 
-[node name="BlorbBalls" type="Node2D" parent="."]
+[node name="BlorbBall" type="Node2D" parent="."]
 position = Vector2(400, 0)
+script = ExtResource("4_or1ld")
 
-[node name="BlorbBalls" type="TextureRect" parent="BlorbBalls"]
+[node name="BlorbBalls" type="TextureRect" parent="BlorbBall"]
 offset_left = 2.0
 offset_top = 416.0
 offset_right = 42.0
@@ -141,15 +146,18 @@ offset_bottom = 453.0
 texture = ExtResource("3_0hvi2")
 expand_mode = 1
 
-[node name="Animation" type="AnimationPlayer" parent="BlorbBalls"]
+[node name="Animation" type="AnimationPlayer" parent="BlorbBall"]
 root_node = NodePath("../BlorbBalls")
 libraries = {
 &"": SubResource("AnimationLibrary_wh6qq")
 }
 autoplay = "floating"
 
-[node name="Area2D" type="Area2D" parent="BlorbBalls"]
+[node name="Area2D" type="Area2D" parent="BlorbBall"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="BlorbBalls/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BlorbBall/Area2D"]
 position = Vector2(22, 434)
 shape = SubResource("CircleShape2D_0hvi2")
+
+[node name="ThemedTimer" parent="." instance=ExtResource("6_or1ld")]
+position = Vector2(18, 0)
