@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dfa7cyn0r53u6"]
+[gd_scene load_steps=5 format=3 uid="uid://dfa7cyn0r53u6"]
 
 [ext_resource type="Script" uid="uid://cqplukcyk3bs0" path="res://Scripts/minigame_4.gd" id="1_wcvdo"]
 [ext_resource type="Texture2D" uid="uid://cgj72mj8qafm5" path="res://Assets/Bg for Blorb.jpg" id="2_lrixb"]
 [ext_resource type="PackedScene" uid="uid://ic0plgd0sn1n" path="res://Scenes/themedtimer.tscn" id="3_xea2i"]
+[ext_resource type="Texture2D" uid="uid://dua31f41ela6x" path="res://Assets/Cup.svg" id="4_lrixb"]
 
 [node name="minigame_4" type="Node2D"]
 script = ExtResource("1_wcvdo")
@@ -25,3 +26,15 @@ expand_mode = 1
 [node name="CounterLabel" type="Label" parent="."]
 offset_right = 40.0
 offset_bottom = 23.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(232, 196)
+texture = ExtResource("4_lrixb")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(472, 207)
+texture = ExtResource("4_lrixb")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(678, 204)
+texture = ExtResource("4_lrixb")
