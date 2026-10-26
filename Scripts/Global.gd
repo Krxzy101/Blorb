@@ -13,24 +13,38 @@ const START_LIVES := 5
 var lives := START_LIVES
 var minigames_done := 0
 
+func _ready() -> void:
+	print("Global ready")
+	for p in [LEVEL_SCREEN, DONE_SCREEN, TITLE_SCREEN] + MINIGAMES:
+		print(p, " exists: ", ResourceLoader.exists(p))
+
+func _go(path: String) -> void:
+	print("Changing scene to: ", path)
+	if not ResourceLoader.exists(path):
+		push_error("Scene not found (casing or export settings?): " + path)
+		return
+	var err := get_tree().change_scene_to_file(path)
+	if err != OK:
+		push_error("change_scene_to_file failed with error: %d" % err)
+
 func start_game() -> void:
 	lives = START_LIVES
 	minigames_done = 0
-	get_tree().change_scene_to_file(LEVEL_SCREEN)
+	_go(LEVEL_SCREEN)
 
 func play_next_minigame() -> void:
-	get_tree().change_scene_to_file(MINIGAMES.pick_random())
+	_go(MINIGAMES.pick_random())
 
 func minigame_won() -> void:
 	minigames_done += 1
 	if minigames_done >= GOAL:
-		get_tree().change_scene_to_file(DONE_SCREEN)
+		_go(DONE_SCREEN)
 	else:
-		get_tree().change_scene_to_file(LEVEL_SCREEN)
+		_go(LEVEL_SCREEN)
 
 func minigame_lost() -> void:
 	lives -= 1
 	if lives <= 0:
-		get_tree().change_scene_to_file(TITLE_SCREEN)
+		_go(TITLE_SCREEN)
 	else:
-		get_tree().change_scene_to_file(LEVEL_SCREEN)
+		_go(LEVEL_SCREEN)
