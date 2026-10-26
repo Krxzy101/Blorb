@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c4g4rqv2bo4ey"
-path="res://.godot/imported/Sad Blorb.svg-9986a8f80632661a99d6cdcbaeb94f8d.ctex"
+path="res://.godot/imported/Sad Blorb.svg-5ae12761061b38cf1eb2473f5e2108e5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sad Blorb.svg"
-dest_files=["res://.godot/imported/Sad Blorb.svg-9986a8f80632661a99d6cdcbaeb94f8d.ctex"]
+source_file="res://assets/Sad Blorb.svg"
+dest_files=["res://.godot/imported/Sad Blorb.svg-5ae12761061b38cf1eb2473f5e2108e5.ctex"]
 
 [params]
 

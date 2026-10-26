@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cs0ideymx2tq5"
-path="res://.godot/imported/Blorb Player.svg-eb5912e37a12ad8bda710c84f38ed468.ctex"
+path="res://.godot/imported/Blorb Player.svg-63bcb27939719d67b3ba81e69df98423.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Blorb Player.svg"
-dest_files=["res://.godot/imported/Blorb Player.svg-eb5912e37a12ad8bda710c84f38ed468.ctex"]
+source_file="res://assets/Blorb Player.svg"
+dest_files=["res://.godot/imported/Blorb Player.svg-63bcb27939719d67b3ba81e69df98423.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ts3i5qj3q1um"
-path="res://.godot/imported/Evil Blorb Player.svg-54e746a8b51968a8ffae16782ddb90cb.ctex"
+path="res://.godot/imported/Evil Blorb Player.svg-4739e1541cd41307c211f0ace3ca4cff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Evil Blorb Player.svg"
-dest_files=["res://.godot/imported/Evil Blorb Player.svg-54e746a8b51968a8ffae16782ddb90cb.ctex"]
+source_file="res://assets/Evil Blorb Player.svg"
+dest_files=["res://.godot/imported/Evil Blorb Player.svg-4739e1541cd41307c211f0ace3ca4cff.ctex"]
 
 [params]
 

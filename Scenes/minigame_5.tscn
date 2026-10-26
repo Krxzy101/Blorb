@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://dpieqaov5a6fi"]
 
-[ext_resource type="Texture2D" uid="uid://cgj72mj8qafm5" path="res://Assets/Bg for Blorb.jpg" id="1_b3dkm"]
-[ext_resource type="Script" uid="uid://dfpd1pxu4finw" path="res://Scripts/minigame_5.gd" id="1_o0t2h"]
-[ext_resource type="PackedScene" uid="uid://ic0plgd0sn1n" path="res://Scenes/themedtimer.tscn" id="3_1bf3g"]
+[ext_resource type="Texture2D" uid="uid://cgj72mj8qafm5" path="res://assets/Bg for Blorb.jpg" id="1_b3dkm"]
+[ext_resource type="Script" uid="uid://dfpd1pxu4finw" path="res://scripts/minigame_5.gd" id="1_o0t2h"]
+[ext_resource type="PackedScene" uid="uid://ic0plgd0sn1n" path="res://scenes/themedtimer.tscn" id="3_1bf3g"]
 
 [node name="minigame5" type="Node2D"]
 script = ExtResource("1_o0t2h")

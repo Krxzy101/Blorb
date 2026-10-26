@@ -1,16 +1,16 @@
 [gd_scene load_steps=4 format=3 uid="uid://bik2i06hm3ucp"]
 
-[ext_resource type="Script" uid="uid://vyo8yw6odgx6" path="res://Scripts/level_scene.gd" id="1_c7xwe"]
-[ext_resource type="Texture2D" uid="uid://b2jic1sq6wtm2" path="res://Assets/Level BG.svg" id="2_2fcgv"]
-[ext_resource type="Texture2D" uid="uid://cg4gtal3abhq4" path="res://Assets/Star.svg" id="2_c7xwe"]
+[ext_resource type="Script" uid="uid://vyo8yw6odgx6" path="res://scripts/level_scene.gd" id="1_a74lg"]
+[ext_resource type="Texture2D" uid="uid://b2jic1sq6wtm2" path="res://assets/Level BG.svg" id="2_c8xsp"]
+[ext_resource type="Texture2D" uid="uid://cg4gtal3abhq4" path="res://assets/Star.svg" id="3_fkwfp"]
 
 [node name="Level" type="Node2D"]
-script = ExtResource("1_c7xwe")
+script = ExtResource("1_a74lg")
 
 [node name="Background" type="TextureRect" parent="."]
 offset_right = 1150.0
 offset_bottom = 642.0
-texture = ExtResource("2_2fcgv")
+texture = ExtResource("2_c8xsp")
 expand_mode = 1
 
 [node name="StarContainer" type="HBoxContainer" parent="."]
@@ -21,23 +21,23 @@ offset_bottom = 272.0
 
 [node name="Star" type="TextureRect" parent="StarContainer"]
 layout_mode = 2
-texture = ExtResource("2_c7xwe")
+texture = ExtResource("3_fkwfp")
 
 [node name="Star2" type="TextureRect" parent="StarContainer"]
 layout_mode = 2
-texture = ExtResource("2_c7xwe")
+texture = ExtResource("3_fkwfp")
 
 [node name="Star3" type="TextureRect" parent="StarContainer"]
 layout_mode = 2
-texture = ExtResource("2_c7xwe")
+texture = ExtResource("3_fkwfp")
 
 [node name="Star4" type="TextureRect" parent="StarContainer"]
 layout_mode = 2
-texture = ExtResource("2_c7xwe")
+texture = ExtResource("3_fkwfp")
 
 [node name="Star5" type="TextureRect" parent="StarContainer"]
 layout_mode = 2
-texture = ExtResource("2_c7xwe")
+texture = ExtResource("3_fkwfp")
 
 [node name="Level" type="RichTextLabel" parent="."]
 offset_left = 516.0

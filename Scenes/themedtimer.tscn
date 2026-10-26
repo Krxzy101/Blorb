@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://ic0plgd0sn1n"]
 
-[ext_resource type="Script" uid="uid://c4mmdhn4o8oc" path="res://Scripts/themedtimer.gd" id="1_jnd3y"]
+[ext_resource type="Script" uid="uid://c4mmdhn4o8oc" path="res://scripts/themedtimer.gd" id="1_jnd3y"]
 
 [node name="ThemedTimer" type="Node2D"]
 script = ExtResource("1_jnd3y")

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://djbxlmo6vg1qu"
-path="res://.godot/imported/Garlic.svg-40d0440c61c028a3006be23566318288.ctex"
+path="res://.godot/imported/Garlic.svg-5eb339200ff54082d4d646f0a0dd418f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Garlic.svg"
-dest_files=["res://.godot/imported/Garlic.svg-40d0440c61c028a3006be23566318288.ctex"]
+source_file="res://assets/Garlic.svg"
+dest_files=["res://.godot/imported/Garlic.svg-5eb339200ff54082d4d646f0a0dd418f.ctex"]
 
 [params]
 
