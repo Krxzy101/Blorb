@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://bik2i06hm3ucp"]
+[gd_scene load_steps=4 format=3 uid="uid://bik2i06hm3ucp"]
 
-[ext_resource type="Texture2D" uid="uid://b6fwrleikd0vx" path="res://Assets/WarioBG.jpeg" id="1_cn3xy"]
-[ext_resource type="Texture2D" uid="uid://2jfuokb1iusg" path="res://Assets/Garlic Colored.svg" id="2_c7xwe"]
+[ext_resource type="Script" uid="uid://vyo8yw6odgx6" path="res://Scripts/level_scene.gd" id="1_c7xwe"]
+[ext_resource type="Texture2D" uid="uid://cgj72mj8qafm5" path="res://Assets/Bg for Blorb.jpg" id="1_cn3xy"]
+[ext_resource type="Texture2D" uid="uid://cg4gtal3abhq4" path="res://Assets/Star.svg" id="2_c7xwe"]
 
 [node name="Level" type="Node2D"]
+script = ExtResource("1_c7xwe")
 
 [node name="Background" type="TextureRect" parent="."]
 offset_right = 1150.0
@@ -11,29 +13,29 @@ offset_bottom = 642.0
 texture = ExtResource("1_cn3xy")
 expand_mode = 1
 
-[node name="GarlicContainer" type="HBoxContainer" parent="."]
-offset_left = 103.0
-offset_top = 47.0
-offset_right = 1039.0
-offset_bottom = 279.0
+[node name="StarContainer" type="HBoxContainer" parent="."]
+offset_left = 50.0
+offset_top = 40.0
+offset_right = 1116.0
+offset_bottom = 272.0
 
-[node name="Garlic" type="TextureRect" parent="GarlicContainer"]
+[node name="Star" type="TextureRect" parent="StarContainer"]
 layout_mode = 2
 texture = ExtResource("2_c7xwe")
 
-[node name="Garlic2" type="TextureRect" parent="GarlicContainer"]
+[node name="Star2" type="TextureRect" parent="StarContainer"]
 layout_mode = 2
 texture = ExtResource("2_c7xwe")
 
-[node name="Garlic3" type="TextureRect" parent="GarlicContainer"]
+[node name="Star3" type="TextureRect" parent="StarContainer"]
 layout_mode = 2
 texture = ExtResource("2_c7xwe")
 
-[node name="Garlic4" type="TextureRect" parent="GarlicContainer"]
+[node name="Star4" type="TextureRect" parent="StarContainer"]
 layout_mode = 2
 texture = ExtResource("2_c7xwe")
 
-[node name="Garlic5" type="TextureRect" parent="GarlicContainer"]
+[node name="Star5" type="TextureRect" parent="StarContainer"]
 layout_mode = 2
 texture = ExtResource("2_c7xwe")
 
@@ -47,10 +49,10 @@ theme_override_font_sizes/normal_font_size = 42
 text = "Level #"
 
 [node name="Timer" type="RichTextLabel" parent="."]
-offset_left = 538.0
-offset_top = 461.0
-offset_right = 629.0
-offset_bottom = 526.0
+offset_left = 535.0
+offset_top = 402.0
+offset_right = 626.0
+offset_bottom = 467.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 42
 text = "0.00"

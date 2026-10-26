@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://6n4to0qdmul1"]
 
-[ext_resource type="Texture2D" uid="uid://b6fwrleikd0vx" path="res://Assets/WarioBG.jpeg" id="1_68ljo"]
-[ext_resource type="Script" uid="uid://bk3nahfrqr40x" path="res://Scenes/title_screen.gd" id="1_b6ftn"]
+[ext_resource type="Script" uid="uid://bk3nahfrqr40x" path="res://Scripts/title_screen.gd" id="1_b6ftn"]
+[ext_resource type="Texture2D" uid="uid://cgj72mj8qafm5" path="res://Assets/Bg for Blorb.jpg" id="2_b6ftn"]
 
 [node name="TitleScreen" type="Node2D"]
 script = ExtResource("1_b6ftn")
@@ -9,7 +9,7 @@ script = ExtResource("1_b6ftn")
 [node name="Background" type="TextureRect" parent="."]
 offset_right = 1151.0
 offset_bottom = 647.0
-texture = ExtResource("1_68ljo")
+texture = ExtResource("2_b6ftn")
 expand_mode = 1
 
 [node name="Title" type="RichTextLabel" parent="."]
