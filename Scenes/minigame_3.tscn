@@ -1,0 +1,63 @@
+[gd_scene load_steps=8 format=3 uid="uid://dfpr2wbpp2mmo"]
+
+[ext_resource type="Script" uid="uid://bwjbcojtps3ej" path="res://Scripts/minigame_3.gd" id="1_33dbb"]
+[ext_resource type="Texture2D" uid="uid://cgj72mj8qafm5" path="res://Assets/Bg for Blorb.jpg" id="2_cdg48"]
+[ext_resource type="PackedScene" uid="uid://ic0plgd0sn1n" path="res://Scenes/themedtimer.tscn" id="3_1i1uu"]
+[ext_resource type="PackedScene" uid="uid://c16hpkxpaexmg" path="res://Scenes/player.tscn" id="4_0abbc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_elj0y"]
+size = Vector2(1151, 181)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jqvox"]
+size = Vector2(59, 651)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lpvao"]
+size = Vector2(1280, 183)
+
+[node name="minigame_3" type="Node2D"]
+script = ExtResource("1_33dbb")
+
+[node name="ScrollingBackground" type="Parallax2D" parent="."]
+repeat_size = Vector2(1000, 0)
+autoscroll = Vector2(-100, 0)
+repeat_times = 10000
+
+[node name="Background" type="TextureRect" parent="ScrollingBackground"]
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 1026.0
+offset_bottom = 643.0
+texture = ExtResource("2_cdg48")
+expand_mode = 1
+
+[node name="ThemedTimer" parent="." instance=ExtResource("3_1i1uu")]
+
+[node name="Player" parent="." instance=ExtResource("4_0abbc")]
+position = Vector2(42, 414)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(576.5, 551.5)
+shape = SubResource("RectangleShape2D_elj0y")
+
+[node name="Walls" type="StaticBody2D" parent="."]
+
+[node name="LeftWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(-28.5, 325.5)
+shape = SubResource("RectangleShape2D_jqvox")
+
+[node name="RightWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(1184, 318)
+shape = SubResource("RectangleShape2D_jqvox")
+
+[node name="Ceiling" type="CollisionShape2D" parent="Walls"]
+position = Vector2(577, -88)
+shape = SubResource("RectangleShape2D_lpvao")
+
+[node name="CounterLabel" type="Label" parent="."]
+offset_left = 91.0
+offset_top = 3.0
+offset_right = 186.0
+offset_bottom = 52.0
+theme_override_font_sizes/font_size = 35
