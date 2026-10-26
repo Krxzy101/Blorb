@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://741pesdlpgpp" path="res://Scripts/minigame_2.gd" id="1_rfxq2"]
 [ext_resource type="Texture2D" uid="uid://cgj72mj8qafm5" path="res://Assets/Bg for Blorb.jpg" id="2_mmgun"]
 [ext_resource type="PackedScene" uid="uid://ic0plgd0sn1n" path="res://Scenes/themedtimer.tscn" id="3_h684j"]
-[ext_resource type="Texture2D" uid="uid://bt5ankdw6hw5k" path="res://Assets/icon.svg" id="4_wu6l1"]
+[ext_resource type="Texture2D" uid="uid://ts3i5qj3q1um" path="res://Assets/Evil Blorb Player.svg" id="4_rfxq2"]
 [ext_resource type="Script" uid="uid://05kn6a5837ri" path="res://Scripts/button_1.gd" id="5_cqly6"]
 
 [node name="minigame_2" type="Node2D"]
@@ -30,7 +30,7 @@ offset_left = 44.0
 offset_top = 136.0
 offset_right = 172.0
 offset_bottom = 264.0
-texture_normal = ExtResource("4_wu6l1")
+texture_normal = ExtResource("4_rfxq2")
 script = ExtResource("5_cqly6")
 
 [node name="Button_2" type="TextureButton" parent="."]
@@ -38,7 +38,7 @@ offset_left = 683.0
 offset_top = 21.0
 offset_right = 811.0
 offset_bottom = 149.0
-texture_normal = ExtResource("4_wu6l1")
+texture_normal = ExtResource("4_rfxq2")
 script = ExtResource("5_cqly6")
 
 [node name="Button_3" type="TextureButton" parent="."]
@@ -46,7 +46,7 @@ offset_left = 306.0
 offset_top = 336.0
 offset_right = 434.0
 offset_bottom = 464.0
-texture_normal = ExtResource("4_wu6l1")
+texture_normal = ExtResource("4_rfxq2")
 script = ExtResource("5_cqly6")
 
 [node name="Button_4" type="TextureButton" parent="."]
@@ -54,7 +54,7 @@ offset_left = 956.0
 offset_top = 269.0
 offset_right = 1084.0
 offset_bottom = 397.0
-texture_normal = ExtResource("4_wu6l1")
+texture_normal = ExtResource("4_rfxq2")
 script = ExtResource("5_cqly6")
 
 [connection signal="pressed" from="Button_1" to="." method="_on_button_1_pressed"]

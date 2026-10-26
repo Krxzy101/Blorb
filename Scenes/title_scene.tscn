@@ -1,14 +1,14 @@
 [gd_scene load_steps=3 format=3 uid="uid://6n4to0qdmul1"]
 
 [ext_resource type="Script" uid="uid://bk3nahfrqr40x" path="res://Scripts/title_screen.gd" id="1_b6ftn"]
-[ext_resource type="Texture2D" uid="uid://cgj72mj8qafm5" path="res://Assets/Bg for Blorb.jpg" id="2_b6ftn"]
+[ext_resource type="Texture2D" uid="uid://c2oqv7w3un0wn" path="res://Assets/TItle BG.svg" id="2_b6ftn"]
 
 [node name="TitleScreen" type="Node2D"]
 script = ExtResource("1_b6ftn")
 
 [node name="Background" type="TextureRect" parent="."]
-offset_right = 1151.0
-offset_bottom = 647.0
+offset_right = 1156.0
+offset_bottom = 656.0
 texture = ExtResource("2_b6ftn")
 expand_mode = 1
 
