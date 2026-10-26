@@ -10,15 +10,12 @@ A little minigame game I made in Godot 4. You get thrown into random minigames o
 
 ## How to play
 
-1. Open the game on itch.io (https://krxzy101.itch.io/blorb) and click Run game. It plays right in your browser, nothing to install.
-2. Hit Start.
-3. You get a 3 second countdown showing your level and lives (the stars).
-4. A random minigame starts. Win it and you go up a level. Lose it and you lose a life.
-5. Win 4 minigames to beat the game. Lose all 5 lives and you're back at the title screen.
+1. Open the game on itch.io (https://krxzy101.itch.io/blorb) and click Run game.
+2. You get a 3 second countdown showing your level and lives (the stars).
+3. A random minigame starts. Win it and you go up a level. Lose it and you lose a life.
+4. Win 4 minigames to beat the game. Lose all 5 lives and you're back at the title screen.
 
 Controls: (Left & Right Arrow & Space)
-
-Tip: if it won't load or the buttons do nothing, try a different browser (Chrome or Firefox work best) and refresh the page.
 
 ## How I made it
 
