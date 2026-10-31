@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djbxlmo6vg1qu"
-path="res://.godot/imported/Garlic.svg-5eb339200ff54082d4d646f0a0dd418f.ctex"
+uid="uid://1hy1gmc11j75"
+path="res://.godot/imported/Lose BG.svg-f1ba290e242c8546d3388bd58835d02a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Garlic.svg"
-dest_files=["res://.godot/imported/Garlic.svg-5eb339200ff54082d4d646f0a0dd418f.ctex"]
+source_file="res://assets/Lose BG.svg"
+dest_files=["res://.godot/imported/Lose BG.svg-f1ba290e242c8546d3388bd58835d02a.ctex"]
 
 [params]
 
@@ -32,6 +32,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
+svg/scale=2.4
 editor/scale_with_editor_scale=false
 editor/convert_colors_with_editor_theme=false

@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://bj024kelkhb2l"]
+
+[ext_resource type="FontFile" uid="uid://c1qihtohfc6gv" path="res://assets/Level Select Font/Fragmentcore.otf" id="1_54grb"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_k4qwq"]
+load_path = "res://.godot/imported/Level Select BG.svg-7d95964924a0f88d58e85624757dd554.ctex"
+
+[node name="level_select_scene" type="Node2D"]
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 1154.0
+offset_bottom = 649.0
+texture = SubResource("CompressedTexture2D_k4qwq")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="."]
+offset_left = 434.0
+offset_top = 8.0
+offset_right = 723.0
+offset_bottom = 84.0
+theme_override_colors/font_color = Color(0.464052, 0.907047, 0.746924, 1)
+theme_override_fonts/font = ExtResource("1_54grb")
+theme_override_font_sizes/font_size = 62
+text = "Level Select"

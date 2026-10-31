@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://c2i42pxxya0ua"]
+
+[ext_resource type="Texture2D" uid="uid://1hy1gmc11j75" path="res://assets/Lose BG.svg" id="1_4okea"]
+
+[node name="lose_scene" type="Node2D"]
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 1150.0
+offset_bottom = 642.0
+texture = ExtResource("1_4okea")
+expand_mode = 1

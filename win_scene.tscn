@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dhwywf3qoo4hw"]
+
+[ext_resource type="Texture2D" uid="uid://cqa7wnkt3u0wb" path="res://assets/Win BG.svg" id="1_k8wnm"]
+
+[node name="win_scene" type="Node2D"]
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 1150.0
+offset_bottom = 642.0
+texture = ExtResource("1_k8wnm")
+expand_mode = 1
